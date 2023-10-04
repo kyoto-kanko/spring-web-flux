@@ -9,6 +9,7 @@ import java.time.Duration;
 @Service
 public class KitchenService {
 
+    // TODO FLUXも追加する
     public Mono<Order> prepareDish(Order order) {
         return Mono.just(order)
                 .delayElement(Duration.ofSeconds(5))
