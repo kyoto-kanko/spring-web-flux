@@ -14,5 +14,6 @@ public class KitchenService {
         return Mono.just(order)
                 .delayElement(Duration.ofSeconds(5))
                 .doOnNext(o -> System.out.println("Preparing dish for " + o.getCustomerName()));
+        System.out.println("テスト");
     }
 }
